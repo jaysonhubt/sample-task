@@ -1,14 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <div class="page w-full">
+    <div class="title text-white bg-sky-600 w-100 text-center py-1">AppTitle...</div>
+    <router-view></router-view>
+  </div>
 </template>
 
-<script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
+<script>
+  export default {
+    name: "App"
+  }
+
 </script>
 
 <style>
 #app {
-  @apply antialiased flex flex-col items-center mt-4;
+  @apply antialiased flex flex-col items-center;
 }
 </style>
